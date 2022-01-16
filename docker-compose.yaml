@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  navigation-manager:
+    image: cbizz/navigation-manager-image:latest
+    container_name: navigation-manager-container
+    restart: always
+    build:
+      context: ./navigation_manager
+      dockerfile: ./navigation_manager/Dockerfile
+    devices:
+      - /dev/ttyUSB0 # pixhawk device path (may be gpio)
+  object_scanner:
+    image: cbizz/object-scanner-image:latest
+    container_name: object-scanner-container
+    restart: always
+    build:
+      context: ./object_scanner
+      dockerfile: ./object_scanner/Dockerfile
+  # map-surveyor:
+  #   image: cbizz/map-surveyor-image:latest
+  #   container: map-surveyor-container
+  #   depends_on: 
+  #     - navigation-manager
+  #     - object_scanner
+  #   restart_alwasy: true
