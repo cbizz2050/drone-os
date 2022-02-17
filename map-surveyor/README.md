@@ -1,1 +1,0 @@
-# TODO: Add this after navigation and scanner are complete

@@ -1,1 +1,3 @@
-file:///C:/Users/cbizz/Downloads/OpenSourceComputer-VisionBasedGuidanceSystemforUAVsOn-BoardDecisionMaking.pdf
+https://dronekit-python.readthedocs.io/en/latest/guide/quick_start.html#installation
+https://stackoverflow.com/questions/61714244/dronekit-python-running-in-docker-connecting-to-mavproxy-on-host
+https://mavlink.io/en/ ** Mavlink requires python 2.7
