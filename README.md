@@ -21,10 +21,9 @@ Inside of this repository, you will find the following;
 The software configuration of Drone-OS includes 3 seperate executable services wrapped into individual docker containers (see below).
 
 # Docker container layout:
-1. Navigation Manager
+1. uav-nav
     - image: Ubuntu 20.04
-    - Forked library: ardupilot/pymavlink
-    - Source: /drone-os/navigation
+    - Source: /drone-os/uav-nav
         - input:
             - Flight Controller:
                 - Model: Pixhawk PX4 v2.4.8
@@ -32,9 +31,3 @@ The software configuration of Drone-OS includes 3 seperate executable services w
             - Camera:
                 - Model: Luxonis OAK-D
                 - Hardware device file: /dev/video0
-
-## Start process
-1. change directory to location with docker-compose.yaml
-2. run 'docker-compose up'
-
-
